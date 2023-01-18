@@ -16,3 +16,9 @@
 # true
 
 p "Enter one word"
+user_input = gets.chomp.downcase
+if user_input == user_input.reverse
+  p "true"
+else 
+  p "false"
+end

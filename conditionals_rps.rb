@@ -7,3 +7,13 @@
 # If you need a refresher on the rules of Rock, Paper, Scissors: https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors
 
 p "Please choose rock, paper, or scissors:"
+user_choice = gets.chomp.downcase
+p "You played " + user_choice + "!"
+p "The computer played scissors!"
+if user_choice == "paper"
+  p "You lost!"
+elsif user_choice == "rock"
+  p "You won!"
+elsif user_choice == "scissors"
+  p "You tied!"
+end
